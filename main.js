@@ -1,4 +1,9 @@
 var currentGrid;
+function anim() {
+  getGrid(currentGrid);
+  drawGrid();
+  myVar = setTimeout(anim, 50)
+}
 
 function getGrid(grid){
 var nextGrid = [];
