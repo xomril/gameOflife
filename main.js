@@ -15,15 +15,15 @@ var nextGrid = [];
 
             if(cellXY==1){
                 if(neighbors>1 && neighbors <4) {
-                    line.push("*");
+                    line.push(1);
                 } else {
-                    line.push(" ");
+                    line.push(0);
                 }
             } else {
                 if(neighbors==3) {
-                   line.push("*");
+                   line.push(1);
                } else {
-                  line.push(" ");
+                  line.push(0);
                }
             }
          }
@@ -37,7 +37,7 @@ var grid = [];
     for(x=0;x<10;x++){
         var line=[];
         for(y=0;y<10;y++){
-            line.push(Math.floor(Math.random() * 2) == 1 ? "*" : " ");
+            line.push(Math.floor(Math.random() * 2));
         }
      grid.push(line);
     }
@@ -112,9 +112,9 @@ grid= currentGrid;
     for(x=0;x<grid.length;x++){
         for(y=0;y<grid[x].length;y++){
             if(grid[x][y]==1){
-                cell="1"
+                cell="*"
             } else {
-                cell="0"
+                cell=" "
             }
             document.querySelector("#board").innerHTML +=cell;
         }
