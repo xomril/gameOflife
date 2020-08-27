@@ -112,9 +112,9 @@ grid= currentGrid;
     for(x=0;x<grid.length;x++){
         for(y=0;y<grid[x].length;y++){
             if(grid[x][y]==1){
-                cell="1"
+                cell="*"
             } else {
-                cell="0"
+                cell=" "
             }
             document.querySelector("#board").innerHTML +=cell;
         }
