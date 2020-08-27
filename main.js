@@ -15,15 +15,15 @@ var nextGrid = [];
 
             if(cellXY==1){
                 if(neighbors>1 && neighbors <4) {
-                    line.push(1);
+                    line.push("*");
                 } else {
-                    line.push(0);
+                    line.push(" ");
                 }
             } else {
                 if(neighbors==3) {
-                   line.push(1);
+                   line.push("*");
                } else {
-                  line.push(0);
+                  line.push(" ");
                }
             }
          }
