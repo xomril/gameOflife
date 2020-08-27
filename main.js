@@ -37,7 +37,7 @@ var grid = [];
     for(x=0;x<10;x++){
         var line=[];
         for(y=0;y<10;y++){
-            line.push(Math.floor(Math.random() * 2));
+            line.push(Math.floor(Math.random() * 2) == 1 ? "*" : " ");
         }
      grid.push(line);
     }
